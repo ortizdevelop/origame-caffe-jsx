@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./nullstyle.css";
+.menu {
+  position: relative;
+  margin-top: 735px;
+  width: 100%;
+  left: 15%;
+}
+.menu__title {
+  font-size: 64px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 78px;
+}
+.menu__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__list {
+  left: 8%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  margin-right: 197px;
+  transition: 0.35s;
+}
+.menu__list:hover {
+  transition: 0.35s;
+}
+.menu__list:hover img {
+  transition: 0.35s;
+  border: 5px solid #ff9466;
+  border-radius: 50%;
+}
+.menu__list:hover p {
+  transition: 0.35s;
+  transform: translateY(10px);
+  background-color: #ff9466;
+  color: #1d1e25;
+}
+.menu__img {
+  padding-top: 19.5px;
+  text-align: center;
+  border: 5px solid #1e1e1e;
+  border-radius: 50%;
+  transition: 0.35s;
+}
+.menu__name {
+  border-radius: 3px;
+  transition: 0.35s;
+  padding: 6px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #e4e4e4;
+}

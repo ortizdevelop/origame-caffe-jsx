@@ -1,0 +1,66 @@
+// Import all styles
+@import "./imports.scss";
+
+.menu {
+  position: relative;
+  margin-top: 735px;
+  width: 100%;
+  left: 15%;
+
+  &__title {
+    font-size: 64px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 78px;
+  }
+
+  &__column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list {
+    left: 8%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-right: 197px;
+    transition: $tr;
+
+    &:hover {
+      transition: $tr;
+
+      img {
+        transition: $tr;
+        border: 5px solid $color3;
+        border-radius: 50%;
+      }
+
+      p {
+        transition: $tr;
+        transform: translateY(10px);
+        background-color: $color3;
+        color: $color2;
+      }
+    }
+  }
+
+  &__img {
+    padding-top: 19.5px;
+    text-align: center;
+    border: 5px solid $bgc1;
+    border-radius: 50%;
+    transition: $tr;
+  }
+
+  &__name {
+    border-radius: 3px;
+    transition: $tr;
+    padding: 6px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #e4e4e4;
+  }
+}

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./nullstyle.css";
+.address {
+  position: relative;
+  left: 15%;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 118px;
+}
+.address__title {
+  margin-bottom: 66px;
+  font-size: 64px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+.address__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.address__map {
+  width: 690px;
+  height: 404px;
+  text-align: center;
+}
+.address__columns {
+  position: relative;
+  left: 96px;
+}
+.address__columns li:nth-child(1) {
+  width: 295px;
+}
+.address__columns li:nth-child(2) p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ff9466;
+}
+.address__columns li:nth-child(3) {
+  width: 259px;
+}
+.address__list {
+  margin-top: 56px;
+}
+.address__list p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #e4e4e4;
+}

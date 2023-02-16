@@ -1,0 +1,71 @@
+// Import all styles
+@import "./imports.scss";
+
+.about {
+  position: relative;
+  top: 496px;
+  left: 15%;
+  font-family: $ff2;
+  &__body {
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__content {
+    margin-top: 87px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  &__text {
+    position: relative;
+    top: 56px;
+    width: 592px;
+    font-size: 16px;
+    font-weight: 300;
+    color: $color1;
+
+    p {
+      margin-top: 25px;
+    }
+
+    span {
+      color: $color3;
+      transition: $tr;
+
+      &::before {
+        transition: $tr;
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 135px;
+        width: 46px;
+        height: 43px;
+        transform: translateY(0px);
+      }
+
+      &:hover {
+        transition: $tr;
+
+        &::before {
+          transition: $tr;
+          display: inline-block;
+          transform: translateY(-20px);
+        }
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    left: 36px;
+  }
+}

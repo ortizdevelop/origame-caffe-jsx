@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./nullstyle.css";
+.about {
+  position: relative;
+  top: 496px;
+  left: 15%;
+  font-family: "Montserrat", sans-serif;
+}
+.about__title {
+  font-size: 64px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+.about__content {
+  margin-top: 87px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.about__text {
+  position: relative;
+  top: 56px;
+  width: 592px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #e4e4e4;
+}
+.about__text p {
+  margin-top: 25px;
+}
+.about__text span {
+  color: #ff9466;
+  transition: 0.35s;
+}
+.about__text span::before {
+  transition: 0.35s;
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 135px;
+  width: 46px;
+  height: 43px;
+  transform: translateY(0px);
+}
+.about__text span:hover {
+  transition: 0.35s;
+}
+.about__text span:hover::before {
+  transition: 0.35s;
+  display: inline-block;
+  transform: translateY(-20px);
+}
+.about__img {
+  position: relative;
+  left: 36px;
+}

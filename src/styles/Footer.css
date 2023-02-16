@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./nullstyle.css";
+.footer {
+  width: 129.5%;
+  position: relative;
+  margin-top: 168px;
+  padding-bottom: 28px;
+  font-family: "Montserrat", sans-serif;
+  border-top: 1px solid #ff9466;
+}
+.footer__column {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__copyright {
+  font-size: 16px;
+  line-height: 20px;
+  color: #c4c4c4;
+  opacity: 50%;
+}
+.footer__number {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}

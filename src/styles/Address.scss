@@ -1,0 +1,60 @@
+// Import all styles
+@import "./imports.scss";
+
+.address {
+  position: relative;
+  left: 15%;
+  font-family: $ff2;
+  margin-top: 118px;
+
+  &__title {
+    margin-bottom: 66px;
+    font-size: 64px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  &__map {
+    width: 690px;
+    height: 404px;
+    text-align: center;
+  }
+
+  &__columns {
+    position: relative;
+    left: 96px;
+    li {
+      &:nth-child(1) {
+        width: 295px;
+      }
+      &:nth-child(2) {
+        p {
+          font-size: 24px;
+          font-weight: 500;
+          color: #ff9466;
+        }
+      }
+      &:nth-child(3) {
+        width: 259px;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 56px;
+    p {
+      font-size: 24px;
+      font-weight: 300;
+      color: #e4e4e4;
+    }
+  }
+}

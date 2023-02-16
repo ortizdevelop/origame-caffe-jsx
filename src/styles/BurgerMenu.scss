@@ -1,0 +1,148 @@
+// Import all styles
+@import "./imports.scss";
+
+.burger-menu {
+  transition: $tr;
+  top: 1px;
+  right: 1px;
+  font-family: $ff1;
+  position: absolute;
+  transform: translateX(215%);
+  width: 371px;
+  height: 827.46px;
+  z-index: 3;
+  background-color: $color1;
+
+  &__column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1px;
+  }
+
+  &__list {
+    transition: $tr;
+    margin-top: 15px;
+  }
+
+  &__img {
+    transition: $tr;
+    margin-left: 71px;
+    margin-top: 0;
+  }
+
+  &__text {
+    transition: $tr;
+    font-size: 24px;
+    text-align: center;
+    color: #1d1e25;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__arrow {
+    transition: $tr;
+    margin-left: 138px;
+  }
+
+  .list__text {
+    p {
+      transition: $tr;
+      width: 209px;
+      margin-left: 85px;
+      padding: 10px;
+      cursor: pointer;
+      border-top: $bd2;
+      border-right: $bd2;
+      border-bottom: $bd2;
+      border-left: 2px solid $color1;
+
+      &:hover {
+        transition: $tr;
+        border: 2px solid $color2;
+        background-color: $color3;
+      }
+
+      &:active {
+        transition: $tr;
+        border: 2px solid $color3;
+        background-color: $color2;
+        color: $color3;
+      }
+    }
+  }
+}
+
+.burger-menu-active {
+  transition: $tr;
+  top: 1px;
+  right: 1px;
+  font-family: $ff1;
+  position: absolute;
+  transform: translateX(115%);
+  width: 371px;
+  height: 827.46px;
+  z-index: 5;
+  background-color: $color1;
+
+  &__column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1px;
+  }
+
+  &__list {
+    transition: $tr;
+    margin-top: 15px;
+  }
+
+  &__img {
+    transition: $tr;
+    margin-left: 71px;
+    margin-top: 0;
+  }
+
+  &__text {
+    transition: $tr;
+    font-size: 24px;
+    text-align: center;
+    color: #1d1e25;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__arrow {
+    transition: $tr;
+    margin-left: 138px;
+  }
+
+  .list__text {
+    p {
+      transition: $tr;
+      width: 209px;
+      margin-left: 85px;
+      padding: 10px;
+      cursor: pointer;
+      border-top: $bd2;
+      border-right: $bd2;
+      border-bottom: $bd2;
+      border-left: 2px solid $color1;
+
+      &:hover {
+        transition: $tr;
+        border: 2px solid $color2;
+        background-color: $color3;
+      }
+
+      &:active {
+        transition: $tr;
+        border: 2px solid $color3;
+        background-color: $color2;
+        color: $color3;
+      }
+    }
+  }
+}
