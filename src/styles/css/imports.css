@@ -3,7 +3,7 @@
 @import "./nullstyle.css";
 @keyframes menuAnimActive {
   0% {
-    opacity: 100;
+    opacity: 0;
   }
   25% {
     opacity: 0;
@@ -13,6 +13,11 @@
   }
   100% {
     opacity: 100;
+  }
+}
+@keyframes bg-anim {
+  to {
+    background-position: 200% center;
   }
 }
 @keyframes menuAnim {

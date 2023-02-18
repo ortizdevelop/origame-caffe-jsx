@@ -1,6 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "./nullstyle.css";
+@keyframes menuAnimActive {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes bg-anim {
+  to {
+    background-position: 200% center;
+  }
+}
+@keyframes menuAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50;
+  }
+  100% {
+    opacity: 100;
+  }
+}
 .merch {
   position: relative;
   width: 100%;
@@ -21,6 +51,14 @@
   font-size: 24px;
   font-weight: 300;
   color: #e4e4e4;
+  background: linear-gradient(to right, #ff9466 10%, #e4e4e4 50%, #e4e4e4 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  animation: bg-anim 3.5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .merch__sad {
   margin-top: 12px;

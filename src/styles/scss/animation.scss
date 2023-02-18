@@ -16,6 +16,12 @@
   }
 }
 
+@keyframes bg-anim {
+  to {
+    background-position: 200% center; //* Анимация для надписи ORTIZ DEVELOP
+  }
+}
+
 @keyframes menuAnim {
   0% {
     opacity: 0;

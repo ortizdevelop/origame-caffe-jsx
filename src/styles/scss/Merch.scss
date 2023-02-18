@@ -22,6 +22,19 @@
     font-size: 24px;
     font-weight: 300;
     color: #e4e4e4;
+    background: linear-gradient(
+      to right,
+      $color3 10%,
+      $color1 50%,
+      $color1 60%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    animation: bg-anim 3.5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &__sad {

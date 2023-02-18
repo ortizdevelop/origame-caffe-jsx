@@ -15,6 +15,11 @@
     opacity: 100;
   }
 }
+@keyframes bg-anim {
+  to {
+    background-position: 200% center;
+  }
+}
 @keyframes menuAnim {
   0% {
     opacity: 0;
@@ -74,7 +79,7 @@ header .header__time {
 header .header__stocks {
   margin-top: 40px;
   padding: 7px 28px;
-  border: 1px solid #ff9466;
+  border: 2px solid #ff9466;
   background-color: transparent;
   transition: 0.35s;
 }
@@ -128,6 +133,14 @@ header .navbar__column {
 header .navbar__column li:nth-child(2) {
   margin-left: 367px;
 }
+header .navbar__list-img {
+  cursor: pointer;
+  transition: 0.35s;
+}
+header .navbar__list-img:hover {
+  transition: 0.35s;
+  transform: scale(1.05);
+}
 header .navbar__list {
   display: flex;
   margin-top: 107px;
@@ -143,10 +156,11 @@ header .navbar__list-link {
   font-weight: 600;
   transition: 0.35s;
   border-radius: 3px;
+  border: 2px solid transparent;
 }
 header .navbar__list-link:hover {
   transition: 0.35s;
-  border: 1.5px solid #ff9466;
+  border: 2px solid #ff9466;
 }
 header .navbar__list-link:active {
   transition: 0.35s;

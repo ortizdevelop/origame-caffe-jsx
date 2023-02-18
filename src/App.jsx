@@ -10,27 +10,29 @@ import Address from "./components/Address";
 import Footer from "./components/Footer";
 
 // Import styles (CSS)
-import "./styles/nullstyle.css";
-import "./styles/main.css";
-import "./styles/Merch.css";
-import "./styles/Address.css";
-import "./styles/BurgerMenu.css";
+import "./styles/css/nullstyle.css";
+import "./styles/css/main.css";
+import "./styles/css/Merch.css";
+import "./styles/css/Address.css";
+import "./styles/css/BurgerMenu.css";
 
 // Import images (png, jpg, SVG)
 
-const App = () => {
-  return (
-    <div className="app-body">
-      <Header />
-      <main className="main">
-        <About />
-        <Menu />
-        <Merch />
-        <Address />
-      </main>
-      <Footer />
-    </div>
-  );
-};
+class App extends React.Component {
+  render() {
+    return (
+      <div className="app-body">
+        <Header />
+        <main className="main">
+          <About />
+          <Menu />
+          <Merch />
+          <Address />
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+}
 
 export default App;

@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import CSS
-import "../styles/Footer.css";
+import "../styles/css/Footer.css";
 
 // Import images (png, jpg, SVG)
 import footerLogo from "../img/Group 4.png";
