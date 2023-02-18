@@ -1,5 +1,6 @@
 // Import libraries
-import React from "react";
+import React, { userRef } from "react";
+import { Link } from "react-scroll";
 
 // Import components
 import Header from "./components/Header";
@@ -17,17 +18,29 @@ import "./styles/css/Address.css";
 import "./styles/css/BurgerMenu.css";
 
 // Import images (png, jpg, SVG)
+import Arrow from "./img/dashicons_arrow-right-alt2.png";
+
+const divRef = userRef < HTMLDivElement > null;
 
 class App extends React.Component {
   render() {
     return (
       <div className="app-body">
-        <Header />
+        <Header ref={divRef} />
         <main className="main">
           <About />
           <Menu />
           <Merch />
           <Address />
+          <Link
+            to="header"
+            duration={500}
+            smooth={true}
+            button
+            className="anchor"
+          >
+            <img src={Arrow} alt="" className="anchor__img" />
+          </Link>
         </main>
         <Footer />
       </div>

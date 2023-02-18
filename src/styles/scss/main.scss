@@ -10,6 +10,36 @@ body {
 
 .app-body {
   width: 100%;
+
+  .anchor {
+    transition: $tr;
+    position: fixed;
+    z-index: 1;
+    bottom: 24px;
+    right: 20px;
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid $color3;
+    border-radius: 50%;
+
+    &__img {
+      transition: $tr;
+      cursor: pointer;
+    }
+
+    &:hover {
+      transition: $tr;
+      transform: scale(1.1);
+      background-color: $color3;
+
+      img {
+        transition: $tr;
+        transform: scale(1.2);
+        filter: brightness(0.1);
+      }
+    }
+  }
+
 }
 
 header {
@@ -29,7 +59,7 @@ header {
 
     &__bg {
       position: absolute;
-      z-index: 1;
+      z-index: 2;
       width: 100%;
     }
 

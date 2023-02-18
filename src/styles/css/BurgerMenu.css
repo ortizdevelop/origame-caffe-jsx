@@ -33,6 +33,7 @@
 }
 .burger-menu {
   transition: 0.35s;
+  opacity: 0;
   top: 1px;
   right: 1px;
   font-family: "Mitr", sans-serif;
@@ -96,6 +97,7 @@
 
 .burger-menu-active {
   transition: 0.35s;
+  opacity: 1;
   top: 1px;
   right: 1px;
   font-family: "Mitr", sans-serif;

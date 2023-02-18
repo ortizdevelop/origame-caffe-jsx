@@ -57,3 +57,43 @@
   font-weight: 300;
   color: #fff;
 }
+.footer__authorcopy {
+  margin-top: 20px;
+  text-align: center;
+}
+.footer__authors {
+  transition: 0.35s;
+  width: 140px;
+  height: 60px;
+}
+.footer__github {
+  margin-top: 20px;
+  transition: 0.35s;
+  text-align: center;
+}
+.footer__button {
+  transition: 0.35s;
+  padding: 7.5px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3.5px;
+  background-color: transparent;
+  border: 2px solid #ff9466;
+}
+.footer__button:hover {
+  transition: 0.35s;
+}
+.footer__button:hover a {
+  color: #ff9466;
+}
+.footer__button:active {
+  transition: 0.35s;
+  background-color: #ff9466;
+}
+.footer__button:active a {
+  color: #1d1e25;
+}
+.footer__link {
+  transition: 0.35s;
+  color: #e4e4e4;
+}

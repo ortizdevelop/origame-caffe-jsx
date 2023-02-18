@@ -1,5 +1,6 @@
 // Import all styles
 @import "./imports.scss";
+
 .footer {
   width: 129.5%;
   position: relative;
@@ -16,11 +17,9 @@
     align-items: center;
   }
 
-  &__list {
-  }
+  &__list {}
 
-  &__img {
-  }
+  &__img {}
 
   &__copyright {
     font-size: 16px;
@@ -34,4 +33,55 @@
     font-weight: 300;
     color: #fff;
   }
+
+  &__authorcopy {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  &__authors {
+    transition: $tr;
+    width: 140px;
+    height: 60px;
+  }
+
+  &__github {
+    margin-top: 20px;
+    transition: $tr;
+    text-align: center;
+  }
+
+  &__button {
+    transition: $tr;
+    padding: 7.5px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 3.5px;
+    background-color: transparent;
+    border: 2px solid $color3;
+
+    &:hover {
+      transition: $tr;
+
+      a {
+        color: $color3;
+      }
+    }
+
+    &:active {
+      transition: $tr;
+      background-color: $color3;
+
+      a {
+        color: $color2;
+      }
+    }
+  }
+
+  &__link {
+    transition: $tr;
+    color: $color1;
+  }
+
+
 }

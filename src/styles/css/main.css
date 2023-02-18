@@ -41,6 +41,31 @@ body {
 .app-body {
   width: 100%;
 }
+.app-body .anchor {
+  transition: 0.35s;
+  position: fixed;
+  z-index: 1;
+  bottom: 24px;
+  right: 20px;
+  background-color: transparent;
+  padding: 10px;
+  border: 2px solid #ff9466;
+  border-radius: 50%;
+}
+.app-body .anchor__img {
+  transition: 0.35s;
+  cursor: pointer;
+}
+.app-body .anchor:hover {
+  transition: 0.35s;
+  transform: scale(1.1);
+  background-color: #ff9466;
+}
+.app-body .anchor:hover img {
+  transition: 0.35s;
+  transform: scale(1.2);
+  filter: brightness(0.1);
+}
 
 header {
   width: 100%;
@@ -58,7 +83,7 @@ header .header__content {
 }
 header .header__bg {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 }
 header .header__slogan {
